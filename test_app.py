@@ -10,7 +10,7 @@ def test_root():
     response = client.get("/")
 
     assert response.status_code == 200
-    assert response.json()["message"] == "CI/CD Demo API is running"
+    assert response.json()["message"] == "CI/CD Demo API V1 is running"
 
 
 def test_health():
