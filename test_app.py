@@ -25,3 +25,9 @@ def test_add():
 
     assert response.status_code == 200
     assert response.json()["result"] == 5
+
+def test_version():
+    response = client.get("/version")
+
+    assert response.status_code == 200
+    assert response.json()["version"] == "2.0"

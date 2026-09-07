@@ -16,3 +16,8 @@ def health():
 @app.get("/add")
 def add(a: int, b: int):
     return {"result": a + b}
+
+
+@app.get("/version")
+def version():
+    return {"version": "2.0"}
